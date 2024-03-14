@@ -1,0 +1,18 @@
+object FrameCategoria: TFrameCategoria
+  Size.Width = 320.000000000000000000
+  Size.Height = 28.000000000000000000
+  Size.PlatformDefault = False
+  object lblDescricao: TLabel
+    Align = Client
+    StyledSettings = [Family, FontColor]
+    Margins.Left = 10.000000000000000000
+    Size.Width = 310.000000000000000000
+    Size.Height = 28.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 16.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.Trimming = None
+    Text = 'Destaques da Casa'
+    TabOrder = 2
+  end
+end
