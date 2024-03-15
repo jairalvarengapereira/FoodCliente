@@ -60,8 +60,9 @@ var
   Dm: TDm;
 
 Const
-  Base_URL = 'http://3.23.126.19:3002';
-//  Base_URL = 'http://192.168.0.2:3002';
+  Base_URL = 'http://3.23.126.19:3002'; //- AWS
+//  Base_URL = 'http://192.168.0.2:3002'; //- Lenovo_R7
+//  Base_URL = 'http://177.182.90.157:3002'; //- Lenovo_R7 - NoIP
 
 implementation
 

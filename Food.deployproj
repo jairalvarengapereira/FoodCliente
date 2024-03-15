@@ -5,7 +5,7 @@
     </ProjectExtensions>
     <PropertyGroup>
         <DeviceId Condition="'$(Platform)'=='Android'">RQCT700DW3M</DeviceId>
-        <DeviceId Condition="'$(Platform)'=='Android64'">RQCT700DW3M</DeviceId>
+        <DeviceId Condition="'$(Platform)'=='Android64'"/>
         <DeviceId Condition="'$(Platform)'=='iOSDevice64'"/>
         <DeviceId Condition="'$(Platform)'=='iOSSimARM64'"/>
     </PropertyGroup>
@@ -79,6 +79,15 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
+        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-48x48.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Food\res\drawable-mdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon48</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
         <DeployFile Include="Android\Debug\colors.xml" Condition="'$(Config)'=='Debug'">
             <RemoteDir>Food\res\values\</RemoteDir>
             <RemoteName>colors.xml</RemoteName>
@@ -101,15 +110,6 @@
             <RemoteDir>Food\res\drawable\</RemoteDir>
             <RemoteName>ic_launcher_background.xml</RemoteName>
             <DeployClass>Android_AdaptiveIconBackground</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-72x72.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Food\res\drawable-hdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon72</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -142,37 +142,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-144x144.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Food\res\drawable-xxhdpi\</RemoteDir>
+        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-36x36.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Food\res\drawable-ldpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon144</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-192x192.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Food\res\drawable-xxxhdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon192</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-48x48.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Food\res\drawable-mdpi\</RemoteDir>
-            <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon48</DeployClass>
-            <Operation>1</Operation>
-            <LocalCommand/>
-            <RemoteCommand/>
-            <Overwrite>True</Overwrite>
-        </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_VectorizedNotificationIcon.xml" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Food\res\drawable-anydpi-v24\</RemoteDir>
-            <RemoteName>ic_notification.xml</RemoteName>
-            <DeployClass>Android_VectorizedNotificationIcon</DeployClass>
+            <DeployClass>Android_LauncherIcon36</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -187,10 +160,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Food\res\drawable-xlarge\</RemoteDir>
-            <RemoteName>splash_image.png</RemoteName>
-            <DeployClass>Android_SplashImage960</DeployClass>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_VectorizedNotificationIcon.xml" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Food\res\drawable-anydpi-v24\</RemoteDir>
+            <RemoteName>ic_notification.xml</RemoteName>
+            <DeployClass>Android_VectorizedNotificationIcon</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -200,6 +173,15 @@
             <RemoteDir>Food\res\drawable-night-anydpi-v31\</RemoteDir>
             <RemoteName>splash_vector.xml</RemoteName>
             <DeployClass>Android_VectorizedSplashV31Dark</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="$(BDS)\bin\Artwork\Android\FM_SplashImage_960x720.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Food\res\drawable-xlarge\</RemoteDir>
+            <RemoteName>splash_image.png</RemoteName>
+            <DeployClass>Android_SplashImage960</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -227,6 +209,15 @@
             <RemoteDir>Food\res\values\</RemoteDir>
             <RemoteName>styles.xml</RemoteName>
             <DeployClass>AndroidSplashStyles</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-144x144.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Food\res\drawable-xxhdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon144</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -313,10 +304,10 @@
             <RemoteCommand/>
             <Overwrite>True</Overwrite>
         </DeployFile>
-        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-36x36.png" Condition="'$(Config)'=='Debug'">
-            <RemoteDir>Food\res\drawable-ldpi\</RemoteDir>
+        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-192x192.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Food\res\drawable-xxxhdpi\</RemoteDir>
             <RemoteName>ic_launcher.png</RemoteName>
-            <DeployClass>Android_LauncherIcon36</DeployClass>
+            <DeployClass>Android_LauncherIcon192</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
@@ -326,6 +317,15 @@
             <RemoteDir>Food\res\drawable-hdpi\</RemoteDir>
             <RemoteName>ic_notification.png</RemoteName>
             <DeployClass>Android_NotificationIcon36</DeployClass>
+            <Operation>1</Operation>
+            <LocalCommand/>
+            <RemoteCommand/>
+            <Overwrite>True</Overwrite>
+        </DeployFile>
+        <DeployFile Include="C:\Users\Jair\OneDrive\Imagens\Nova pasta\favicon_io\android-icon-72x72.png" Condition="'$(Config)'=='Debug'">
+            <RemoteDir>Food\res\drawable-hdpi\</RemoteDir>
+            <RemoteName>ic_launcher.png</RemoteName>
+            <DeployClass>Android_LauncherIcon72</DeployClass>
             <Operation>1</Operation>
             <LocalCommand/>
             <RemoteCommand/>
