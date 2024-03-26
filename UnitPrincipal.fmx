@@ -1107,7 +1107,6 @@
     Size.Width = 344.000000000000000000
     Size.Height = 596.000000000000000000
     Size.PlatformDefault = False
-    Visible = False
     TabOrder = 2
     object reftFundo: TRectangle
       Align = Contents
@@ -1562,8 +1561,8 @@
         Size.Height = 67.000000000000000000
         Size.PlatformDefault = False
         TabOrder = 2
-        Viewport.Width = 324.000000000000000000
-        Viewport.Height = 67.000000000000000000
+        Viewport.Width = 320.000000000000000000
+        Viewport.Height = 63.000000000000000000
       end
       object lytProdutoBotoes: TLayout
         Align = Bottom
